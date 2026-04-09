@@ -4,10 +4,6 @@
 import json
 from core import read_matrix, mac, judge , measure_time
 
-def run():
-    print("1. mode1")
-    print("2. mode2")
-
 def run_mode1():
     print("=== Mode 1: 사용자 입력 (3x3) ===")
 
@@ -53,7 +49,7 @@ def run_mode2():
     print("\n[2] 패턴 분석")
 
     for pattern_name, pattern_info in patterns.items():
-        total_count += 1
+        total_count += 1 # 총 테스트 갯수 카운트
 
         print(f"\n--- {pattern_name} ---")
 
